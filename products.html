@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <link rel="stylesheet" href="css/products.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar2">
+                <img src="media/logo.png" id="logo">
+                <ul>
+                    <li><a href="index.html" class="navbar2">COVER</a></li>
+                    <li><a href="home.html" class="navbar2">HOME</a></li>
+                    
+                    <li><a href="about.html" class="navbar2">ABOUT</a></li>
+                    <li><a href="connect.html" class="navbar2">CONNECT</a></li>
+                    <li><a href="login.html" class="navbar2">LOGIN</a></li>
+                </ul>
+
+                
+            </div>
+            <div class="content">
+                <div class="left-col">
+                    <h1 class="products1">House Music</h1>&nbsp;&nbsp;
+                    <h2 id="instructions"><em>click on album cover to play</em></h2>
+            
+
+                </div>
+                <div class="right-col">
+                    <p>EQ Parametric</p>
+                    <img src="media/eqparametric2.png" id="icon" width="75">
+                </div>
+                <div class="right-col">
+                        <p>Casablanca Whistle Beat</p>
+                        <img src="https://i.pinimg.com/564x/df/50/a0/df50a06d804114fc7d37098a118be6a4.jpg" id="icon3" width="75">
+                </div>
+                <div class="right-col">
+                    <p>Starter Drums</p>
+                    <img src="media/logdrum.jpg" id="icon2" width="75">
+                </div>
+
+
+                </div>
+                
+                    
+
+
+                </div>
+                
+
+        
+            </div>
+            
+            
+            </div>
+        </div>
+
+        <audio id="mySong">
+
+            <source src="media/usbnation.wav" type="audio/wav">
+
+        </audio>
+
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src = "media/eqparametric2.png";
+                    
+                }else{
+                    mySong.pause();
+                    icon.src = "media/eqparametric2.png";
+                    
+                }
+            }
+
+        </script>
+
+<audio id="mySong2">
+
+    <source src="media/render (2).wav" type="audio/wav">
+
+</audio>
+
+<script>
+    var mySong2 = document.getElementById("mySong2");
+    var icon2 = document.getElementById("icon2");
+
+    icon2.onclick = function(){
+        if(mySong2.paused){
+            mySong2.play();
+            icon2.src = "file:///C:/Users/maasd/Desktop/dk/code/myCarList%20-%20Copy/media/logdrum.jpg";
+            
+        }else{
+            mySong2.pause();
+            icon2.src = "file:///C:/Users/maasd/Desktop/dk/code/myCarList%20-%20Copy/media/logdrum.jpg";
+        }
+    }
+
+</script>
+
+<audio id="mySong3">
+    <source src="media/casablanca.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    var mySong3 = document.getElementById("mySong3");
+    var icon3 = document.getElementById("icon3");
+
+    icon3.onclick = function(){
+        if(mySong3.paused){
+            mySong3.play();
+            icon3.src = "https://i.pinimg.com/564x/df/50/a0/df50a06d804114fc7d37098a118be6a4.jpg";
+
+        }else{
+            mySong3.pause();
+            icon3.src = "https://i.pinimg.com/564x/df/50/a0/df50a06d804114fc7d37098a118be6a4.jpg";
+        }
+    }
+</script>
+
+
+
+
+    </body>
+</html>
